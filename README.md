@@ -31,6 +31,6 @@ The real world uses `left = 2, right = 3, left_parent = 4, right_parent = 5` and
 
 The model class contains "good" models and a "bad" model. 
 
-The "good" models are constructed by assigning `left = 2, right = 3, left_parent = 5, right_parent = 4` and the leaves are a random permutation of `6 to N+5`.
+The "good" models are constructed by assigning `left = 2, right = 3, left_parent = 5, right_parent = 4` and the leaves are a random permutation of `6 to N+5`. Note that the "good" models and real world are only guaranteed to match dynamics at the root.
 
 The "bad" model is constructed by assigning `left = 3, right = 2, left_parent = 4, right_parent = 5` and the leaves are ordered left-to-right from `6 to N+5`. Note that the only difference between "bad" model and real world is the dynamics at the root.
