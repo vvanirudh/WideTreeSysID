@@ -43,7 +43,7 @@ def run(real_world: WideTree, n_leaves: int, num_models: int, moment_based: bool
     weights = (1.0/num_models) * np.ones(num_models)
     all_weights = [weights.copy()]
     # Hedge epsilon
-    eps = 0.5
+    eps = 0.9
     # Choose an initial model
     idx = np.random.randint(num_models)
     model = model_class[idx]
